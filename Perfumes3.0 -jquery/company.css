@@ -1,0 +1,14 @@
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+    display: block;
+    opacity: 1;
+}

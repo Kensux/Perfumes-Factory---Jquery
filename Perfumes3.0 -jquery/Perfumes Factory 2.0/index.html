@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <!--FUENTES DE GOOGLE-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--LINK A CSS-->
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>                            <!--TITULO DE LA PAGINA-->
+        <div class="container-titulo">
+            <h1 class="text-center mt-2 mb-0 py-3 bg-info  "> Perfumes Factory</h1>
+        </div>
+        <button class="button_formulario" id="buttonLogin" data-bs-toggle="modal" data-bs-target="#loginUser">Login</button>
+		<button class="btn btn-primary mb-4 button_formulario" id="buttonLogout" style="position:absolute; right:10px">Salir</button>
+		<div class="modal fade modal-producto container-fluid flex-row" id="loginUser">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content contenedor_modal row mx-0">
+								<div class="modal-header border-0">
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+										aria-label="Close"
+									></button>
+								</div>
+								<div class="row">
+									<div class="col-md-6 m-auto mb-5">
+										<h2>Login</h2>
+										<form id="formLogin">
+											<div class="mb-3">
+												<label for="emailUserLogin" class="form-label">correo</label>
+												<input type="text" class="form-control" id="emailUserLogin" name="imagen" required>
+											</div>
+											<div class="mb-3">
+												<label for="passwordUserLogin" class="form-label">contraseña</label>
+												<input type="text" class="form-control" id="passwordUserLogin" name="nombre" required>
+											</div>
+											<button type="submit" class="btn btn-primary">Aceptar</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-secondary py-3"> <!--BARRA NAVEGADORA-->
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> <!--ENLACES-->
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="company.html">Company</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container"> <!--INFORMACION DE VISUALIZACION-->
+        <p class="text-center mt-5">
+            
+            Somos una franquicia internacional, con un innovador concepto <br> pionero y único en su estilo. Enfocado principalmente en complacer las <br> necesidades del consumidor, ofreciendo perfumes con estilo <br> y calidad que vayan a tono con su dinamismo <br> y forma de vida, adaptándonos a sus exigencias.
+        </p>
+    </div>
+
+    <div class="container px-4 text-center">    <!--SECCION DE PROMOCIONA PROXIMO EVENTO-->
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 mt-5">
+                    <h2>CONOCE NUESTRO PRODUCTO</h2>
+                    <p class="text-start mt-4">Perfumes con una presentación, color y diseño innovador tanto para damas como para caballeros. Disponible en 4 presentaciones 15, 30, 50 y 100 ml que se adaptan a tu personalidad y estilo de vida.<br><br>
+                        y con versiónes más accesible con un diseño variado inspirado en diversos motivos artísticos o tendencias del momento.
+
+                        Disponible en presentaciones de 15, 30, 50, 100 ml y una edición especial de 120 ml.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 mt-5">
+                    <h2>Linea Color</h2>
+                    <img class="img mt-4" src="assets/img1.png" alt="Wrestlemania 2024">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container border border-dark mt-5 ROSTER">        <!--ENLACES A PAGINA DE RAW Y SMACKDOWN-->
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3">
+                        <a target="_blank"  class="btn-roster-smackdown" href="https://perfumesfactory.com/ve/linea_power/">
+                            <img class="img-raw-smackdown" src="assets/img2.png" alt="Linea Galaxi">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <a target="_blank" class="btn-roster-raw" href="https://perfumesfactory.com/ve/cover/">
+                            <img class="img-raw-smackdown" src="assets/img3.png" alt="Iman Feromonas">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container px-4 text-center">                 <!--SECCION DE SUPERESTRELLA Y SIGN-UP-->
+        <div class="row gx-5">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="p-3 cede">
+                    <h3 class="mt-5">oler bien a un buen precio ahora es una opcion</h3>
+                    <p class="text-start mt-4">
+                        Perfumes Factory es una empresa dedicada a brindarle a todas las personas la oportunidad de tener ese aroma o esa fragancia que tanto desean, sin tener que gastar cantidades exorbitantes de dinero. ¿Asi que quieres dejar tu huella a donde sea que vayas?
+                        <strong>Registrate en el siguiente formulario
+                        </strong>y esta al pendiente de todos nuestros productos.   
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-6 ">
+                
+                    <div class="p-3 sign-up formulario">
+                        <h3 class="mt-5">SIGN-UP</h3>
+                        <form class="form-inline" id="formRegister">
+                            <div class="row mb-4 mt-5">
+                                <label for="nameUser" class="col-sm-2 col-form-label">Nombre:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="nameUser" placeholder="Ingresa tu nombre" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="emailUser" class="col-sm-2 col-form-label">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="emailUser" placeholder="Ingresa tu email" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="phoneUser" class="col-sm-2 col-form-label">Telefono:</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" class="form-control" id="phoneUser" placeholder="Ingresa tu telefono" required>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <label for="passwordUser" class="col-sm-2 col-form-label">Contraseña:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="passwordUser" placeholder = "Ingrese una contraseña" required/>
+                                </div>
+                            </div>
+                            <div class="row mb-4 justify-content-center">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+    <div class="container px-4 text-center">     <!--SECCION DEL MAPA-->
+        <div class="row gx-5 my-5">
+            <div class="col mt-5">
+                <div class="p-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.9413860166483!2d-71.41916746059098!3d10.34657198981982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89c66fc2a4ca03%3A0x798461ea6e71f0c2!2sPerfumes%20Factory!5e0!3m2!1ses!2sve!4v1726771562436!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col  ">                   <!--SECCION DE PERFORMANCE CENTER-->
+                <div class="p-3 cede">
+                    <h4>NUESTRAS CEDES</h4>
+                    <p class="text-start mt-4">
+                        Podras encontrarnos ubicados alrededor de todo el pais, tenemos cedes en estados como Caracas, Zulia, Bolivar, Barquisimeto, Barinas, entre otras. si acudes a cualquiera de nuestras sedes contaras con la mejor atencion al cliente, para poder encontrar el perfume que mas te guste al mejor precio posible. <br><br> <a target="_blank" href="https://www.google.com/maps/place/Perfumes+Factory/@10.346572,-71.4191675,17z/data=!3m1!4b1!4m6!3m5!1s0x8e89c66fc2a4ca03:0x798461ea6e71f0c2!8m2!3d10.346572!4d-71.4165979!16s%2Fg%2F11c6stfsxv?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D">Mas informacion sobre
+                            nuestra cede</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="row g-0 text-center custom-row  bg-secondary mt-5">      <!--REDES SOCIALES-->
+            <div class="col-6 col-md-3 pt-5">
+                <p>+500M facebook <br> <br> +220M Instagram <br>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+                <a target="_blank" class="link-net" href="https://www.facebook.com/PerfumesFactoryVenezuela?locale=es_LA">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+
+                <a target="_blank" class="link-net"  href="https://www.instagram.com/perfumesfactoryvzla/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+                </a>
+
+            </div>
+            <div class="col-6 col-md-3  bg-secondary pt-5">
+                <form class="d-flex mt-5 ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-6 col-md-3 bg-secondary pt-5">
+                <p class="ms-5 me-5">© 2024 Copyright Perfumes Factory</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="server/form.js"></script>
+    <script>$(document).ready(function () {
+        // Detectar cuando el cursor se coloca sobre "SIGN-UP"
+        $('h3').on('mouseenter', function () {
+            $(this).css({
+                color: 'blue',
+                transform: 'scale(1.2)', // Aumentar el tamaño
+            });
+        });
+    
+        // Detectar cuando el cursor sale de "SIGN-UP"
+        $('h3').on('mouseleave', function () {
+            $(this).css({
+                color: '', // Restablecer el color original
+                transform: 'scale(1)', // Restaurar el tamaño original
+            });
+        });
+        $('h2').on('mouseenter', function () {
+            $(this).css({
+                color: 'blue',
+                transform: 'scale(1.2)', // Aumentar el tamaño
+            });
+        });
+    
+        // Detectar cuando el cursor sale de "SIGN-UP"
+        $('h2').on('mouseleave', function () {
+            $(this).css({
+                color: '', // Restablecer el color original
+                transform: 'scale(1)', // Restaurar el tamaño original
+            });
+        });
+
+    });
+    </script>
+</body>
+
+</html>
